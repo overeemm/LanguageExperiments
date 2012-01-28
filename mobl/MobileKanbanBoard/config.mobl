@@ -1,0 +1,7 @@
+configuration
+
+title "kanbl"
+database "kanbl"
+version "0.1"
+//html index.html
+debug

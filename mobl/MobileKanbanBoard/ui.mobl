@@ -1,0 +1,101 @@
+module ui
+
+import styling
+import model
+import util
+
+control appbar () {
+  footer("kanbl", appHeaderStyle) {
+    image("kanbl.png")
+    button("add", onclick={ addTask(); })
+    button("reset", onclick={ resetDatabase(); reloadPage(); })
+    button("about", onclick={ about(); })
+  }
+}
+control footer(text : String, st : Style, onclick : Callback = null) {
+  <div class=mergeStyles([st, headerStyle]) onclick=onclick>
+    <div class=headerContainerStyle><div databind=text class=headerTextStyle/></div>
+    elements()
+  </div>
+}
+
+control column(s : Status, st : Style){
+  styledGroup(st) {
+    header (s.name)
+    list(t in s.tasks order by priority desc) {  
+      item { task(t) }
+    }
+  }
+}
+
+control styledGroup(style : Style = groupStyle) {
+  <ul class=mergeStyles([style, groupStyle])>
+    elements()
+  </ul>
+}
+
+control task(t : Task) {
+  button("<", style=moveTaskStyle, pushedStyle=moveTaskPushedStyle, onclick={
+    if(t.status.number > 1) {
+      var oldstatus = t.status;
+      oldstatus.tasks.remove(t);
+      Status.getStatus(oldstatus.number - 1).tasks.add(t);
+    }
+  })
+  button(">", style=moveTaskStyle, pushedStyle=moveTaskPushedStyle, onclick={
+    if(t.status.number < 4) {
+      var oldstatus = t.status;
+      oldstatus.tasks.remove(t);
+      Status.getStatus(oldstatus.number + 1).tasks.add(t);
+    }
+  })
+  label(t.description, style=taskDescriptionStyle)
+  contextMenu {
+    button("delete", onclick={
+      remove(t);
+    })
+    button("edit", onclick={
+      editTask(t);
+    })
+  }
+}
+
+screen addTask() {
+  var newTask = Task()
+
+  header("add") {
+    backButton(text="back")
+    button("done", onclick={
+      newTask.created=now();
+      add(newTask);
+      Status.getStatus(1).tasks.add(newTask);
+      screen return;
+    })
+  }
+  group {
+    item { textField(newTask.description, placeholder="Task description") }
+  }
+}
+
+screen editTask(t : Task) {
+  header("edit") {
+    backButton(text="back")
+    button("done", onclick={ screen return; })
+  }
+  group {
+    item { textField(t.description, placeholder="Task description") }
+  }
+}
+
+screen about() {
+  header("about") {
+    button("back", onclick={screen return; })
+  }
+  <div class=aboutStyle>
+    "<b>kanbl - a kanban board in mobl</b><br />"
+      "Copyright (C) 2011 <a href=\"http://movereem.nl/\" target=\"_blank\">Michiel Overeem</a>"
+    "<br /><br />"
+      "Build in <a href=\"http://www.mobl-lang.org/\" target=\"_blank\">mobl</a>"
+      ", source can be found in <a href=\"https://michielovereem.kilnhg.com/Repo/Public-repos/Group/MobileKanbanBoard\" target=\"_blank\">kiln</a>.<br />"
+  </div>
+}

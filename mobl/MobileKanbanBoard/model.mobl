@@ -1,0 +1,29 @@
+module model
+
+entity Task {
+  description : String       (searchable)
+  status      : Status       (inverse : tasks)
+  created     : DateTime
+  finished    : DateTime
+  priority    : Num
+}
+
+entity Status {
+  
+  number : Num
+  name   : String
+  tasks  : Collection<Task>  (inverse : status)
+  
+  static function getStatus(n : Num) : Status {
+    return (Status.all() where number == n).list().get(0);
+  }
+  
+  static function initDB() {
+    if(Status.all().count() != 4) {
+      add(Status(number=1, name="someday"));
+      add(Status(number=2, name="todo"));
+      add(Status(number=3, name="progress"));
+      add(Status(number=4, name="done"));
+    }
+  }
+}

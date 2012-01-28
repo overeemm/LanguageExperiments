@@ -1,0 +1,9 @@
+module util
+
+external sync function reloadPage() : void
+
+<javascript>
+util.reloadPage = function() {
+  window.location.reload();
+};
+</javascript>

@@ -1,0 +1,287 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7F2894A413B23BF600E89366 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F2894A313B23BF600E89366 /* UIKit.framework */; };
+		7F2894A613B23BF600E89366 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F2894A513B23BF600E89366 /* Foundation.framework */; };
+		7F2894A813B23BF600E89366 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F2894A713B23BF600E89366 /* CoreGraphics.framework */; };
+		7F2894AE13B23BF600E89366 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7F2894AC13B23BF600E89366 /* InfoPlist.strings */; };
+		7F2894B113B23BF600E89366 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F2894B013B23BF600E89366 /* main.m */; };
+		7F2894B413B23BF600E89366 /* InstaMailAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F2894B313B23BF600E89366 /* InstaMailAppDelegate.m */; };
+		7F2894B713B23BF700E89366 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F2894B513B23BF600E89366 /* MainWindow.xib */; };
+		7F2894BA13B23BF700E89366 /* InstaMailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F2894B913B23BF700E89366 /* InstaMailViewController.m */; };
+		7F2894BD13B23BF700E89366 /* InstaMailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F2894BB13B23BF700E89366 /* InstaMailViewController.xib */; };
+		7F2894C413B23C4D00E89366 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F2894C313B23C4D00E89366 /* MessageUI.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7F28949F13B23BF600E89366 /* InstaMail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaMail.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F2894A313B23BF600E89366 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7F2894A513B23BF600E89366 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7F2894A713B23BF600E89366 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7F2894AB13B23BF600E89366 /* InstaMail-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "InstaMail-Info.plist"; sourceTree = "<group>"; };
+		7F2894AD13B23BF600E89366 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7F2894AF13B23BF600E89366 /* InstaMail-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "InstaMail-Prefix.pch"; sourceTree = "<group>"; };
+		7F2894B013B23BF600E89366 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7F2894B213B23BF600E89366 /* InstaMailAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InstaMailAppDelegate.h; sourceTree = "<group>"; };
+		7F2894B313B23BF600E89366 /* InstaMailAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstaMailAppDelegate.m; sourceTree = "<group>"; };
+		7F2894B613B23BF700E89366 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		7F2894B813B23BF700E89366 /* InstaMailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InstaMailViewController.h; sourceTree = "<group>"; };
+		7F2894B913B23BF700E89366 /* InstaMailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstaMailViewController.m; sourceTree = "<group>"; };
+		7F2894BC13B23BF700E89366 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/InstaMailViewController.xib; sourceTree = "<group>"; };
+		7F2894C313B23C4D00E89366 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7F28949C13B23BF600E89366 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F2894C413B23C4D00E89366 /* MessageUI.framework in Frameworks */,
+				7F2894A413B23BF600E89366 /* UIKit.framework in Frameworks */,
+				7F2894A613B23BF600E89366 /* Foundation.framework in Frameworks */,
+				7F2894A813B23BF600E89366 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7F28949413B23BF600E89366 = {
+			isa = PBXGroup;
+			children = (
+				7F2894A913B23BF600E89366 /* InstaMail */,
+				7F2894A213B23BF600E89366 /* Frameworks */,
+				7F2894A013B23BF600E89366 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7F2894A013B23BF600E89366 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7F28949F13B23BF600E89366 /* InstaMail.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7F2894A213B23BF600E89366 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F2894C313B23C4D00E89366 /* MessageUI.framework */,
+				7F2894A313B23BF600E89366 /* UIKit.framework */,
+				7F2894A513B23BF600E89366 /* Foundation.framework */,
+				7F2894A713B23BF600E89366 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7F2894A913B23BF600E89366 /* InstaMail */ = {
+			isa = PBXGroup;
+			children = (
+				7F2894B213B23BF600E89366 /* InstaMailAppDelegate.h */,
+				7F2894B313B23BF600E89366 /* InstaMailAppDelegate.m */,
+				7F2894B513B23BF600E89366 /* MainWindow.xib */,
+				7F2894B813B23BF700E89366 /* InstaMailViewController.h */,
+				7F2894B913B23BF700E89366 /* InstaMailViewController.m */,
+				7F2894BB13B23BF700E89366 /* InstaMailViewController.xib */,
+				7F2894AA13B23BF600E89366 /* Supporting Files */,
+			);
+			path = InstaMail;
+			sourceTree = "<group>";
+		};
+		7F2894AA13B23BF600E89366 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7F2894AB13B23BF600E89366 /* InstaMail-Info.plist */,
+				7F2894AC13B23BF600E89366 /* InfoPlist.strings */,
+				7F2894AF13B23BF600E89366 /* InstaMail-Prefix.pch */,
+				7F2894B013B23BF600E89366 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7F28949E13B23BF600E89366 /* InstaMail */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F2894C013B23BF700E89366 /* Build configuration list for PBXNativeTarget "InstaMail" */;
+			buildPhases = (
+				7F28949B13B23BF600E89366 /* Sources */,
+				7F28949C13B23BF600E89366 /* Frameworks */,
+				7F28949D13B23BF600E89366 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InstaMail;
+			productName = InstaMail;
+			productReference = 7F28949F13B23BF600E89366 /* InstaMail.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7F28949613B23BF600E89366 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 7F28949913B23BF600E89366 /* Build configuration list for PBXProject "InstaMail" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7F28949413B23BF600E89366;
+			productRefGroup = 7F2894A013B23BF600E89366 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7F28949E13B23BF600E89366 /* InstaMail */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7F28949D13B23BF600E89366 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F2894AE13B23BF600E89366 /* InfoPlist.strings in Resources */,
+				7F2894B713B23BF700E89366 /* MainWindow.xib in Resources */,
+				7F2894BD13B23BF700E89366 /* InstaMailViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7F28949B13B23BF600E89366 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F2894B113B23BF600E89366 /* main.m in Sources */,
+				7F2894B413B23BF600E89366 /* InstaMailAppDelegate.m in Sources */,
+				7F2894BA13B23BF700E89366 /* InstaMailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7F2894AC13B23BF600E89366 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F2894AD13B23BF600E89366 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7F2894B513B23BF600E89366 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F2894B613B23BF700E89366 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		7F2894BB13B23BF700E89366 /* InstaMailViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F2894BC13B23BF700E89366 /* en */,
+			);
+			name = InstaMailViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7F2894BE13B23BF700E89366 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7F2894BF13B23BF700E89366 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		7F2894C113B23BF700E89366 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InstaMail/InstaMail-Prefix.pch";
+				INFOPLIST_FILE = "InstaMail/InstaMail-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7F2894C213B23BF700E89366 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InstaMail/InstaMail-Prefix.pch";
+				INFOPLIST_FILE = "InstaMail/InstaMail-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7F28949913B23BF600E89366 /* Build configuration list for PBXProject "InstaMail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F2894BE13B23BF700E89366 /* Debug */,
+				7F2894BF13B23BF700E89366 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F2894C013B23BF700E89366 /* Build configuration list for PBXNativeTarget "InstaMail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F2894C113B23BF700E89366 /* Debug */,
+				7F2894C213B23BF700E89366 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7F28949613B23BF600E89366 /* Project object */;
+}

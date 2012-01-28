@@ -1,0 +1,60 @@
+application kanblsmall
+
+import styling
+import model
+import util
+import ui
+
+load kanbl.png
+load index.html
+
+screen root() {
+  var all = Status.initDB()
+ 
+  navcolumn(Status.getStatus(3), 3, progressColStyle)
+  appbar()
+}
+
+screen todo() {
+  navcolumn(Status.getStatus(2), 2, todoColStyle)
+  appbar()
+}
+
+screen someday() {
+  navcolumn(Status.getStatus(1), 1, somedayColStyle)
+  appbar()
+}
+
+screen done() {
+  navcolumn(Status.getStatus(4), 4, doneColStyle)
+  appbar()
+}
+
+control navbutton(txt : String, scrnumber : Num){
+  when(scrnumber > 0 && scrnumber < 5) {
+	  button(txt, style=moveTaskStyle, pushedStyle=moveTaskPushedStyle, onclick={
+	    if(scrnumber == 1)
+	      someday();
+	    if(scrnumber == 2)
+	      todo();
+	    if(scrnumber == 3)
+	      root();
+	    if(scrnumber == 4)
+	      done();
+	  })
+  }
+}
+
+control navcolumn(s : Status, nr : Num, st : Style){
+  styledGroup(st) {
+    header (s.name) {
+        navbutton("<", nr - 1)
+        navbutton(">", nr + 1)
+    }
+    list(t in s.tasks order by priority desc) {  
+      item { task(t) }
+    }
+  }
+}
+
+control empty(){}

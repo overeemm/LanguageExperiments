@@ -1,0 +1,20 @@
+application kanbllarge
+
+import styling
+import model
+import util
+import ui
+
+load kanbl.png
+load index.html
+
+screen root() {
+  var all = Status.initDB()
+ 
+  column(Status.getStatus(1), somedayColStyle)
+  column(Status.getStatus(2), todoColStyle)
+  column(Status.getStatus(3), progressColStyle)
+  column(Status.getStatus(4), doneColStyle )
+
+  appbar()
+}

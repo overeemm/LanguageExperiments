@@ -1,0 +1,125 @@
+module styling
+
+mixin mobl::ui::generic
+
+load styling_external.css
+
+style $baseColor = rgb(100,100,100)
+
+style moveTaskStyle {
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: $textButtonShadowColor 0px 1px 0px;
+  font-weight: bold;
+  text-align: center;
+  padding: 0.2em 0.2em 0.2em 0.2em;
+  margin: 0.1em;
+  line-height: 2em;
+  color: $textButtonColor;
+  boxShadowMixin(0px, 0px, 3px, #777777);
+  borderRadiusMixin(2px);
+  backgroundGradientMixin($buttonFromColor, $buttonToColor);
+}
+
+style moveTaskPushedStyle {
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: $textButtonShadowColor 0px 1px 0px;
+  font-weight: bold;
+  text-align: center;
+  padding: 0.2em 0.2em 0.2em 0.2em;
+  margin: 0.1em;
+  line-height: 2em;
+  color: $textButtonColor;
+  boxShadowMixin(0px, 0px, 3px, #777777);
+  borderRadiusMixin(2px);
+  backgroundGradientMixin($buttonPushedFromColor, $buttonPushedToColor);
+}
+
+style headerStyle {
+  backgroundGradientMixin(rgb(255,255,255), rgb(255,255,255));
+  background-color: #ffffff;
+  color: #000;
+}
+
+style appHeaderStyle {
+  backgroundGradientMixin(rgb(255,255,255), rgb(255,255,255));
+  background-color: #ffffff;
+  color: #000;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  height: 45px;
+}
+
+style taskDescriptionStyle {
+  margin-left: 1em;
+}
+
+style groupStyle headerContainerStyle {
+  position: relative;
+}
+
+style groupStyle headerTextStyle {
+  position: relative;
+}
+style groupStyle headerStyle {
+  line-height: 13pt;
+  height: 20px;
+  font-size: 10pt;
+  color: #000000;
+}
+
+style todoColStyle headerStyle { 
+  backgroundGradientMixin(rgb(247, 247, 210), rgb(240, 242, 155)); 
+}
+style progressColStyle headerStyle { 
+  backgroundGradientMixin(rgb(320, 250, 170), rgb(270, 200, 120)); 
+}
+style doneColStyle headerStyle { 
+  backgroundGradientMixin(rgb(230, 320, 200), rgb(180, 270, 150));
+}
+style somedayColStyle headerStyle { 
+  backgroundGradientMixin(rgb(270, 270, 270), rgb(220, 220, 220));
+}
+
+style groupStyle {
+  width: 25%;
+  float:left;
+  background-color: transparant;
+}
+
+style todoColStyle { 
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+style progressColStyle  { 
+  list-style: none;
+  margin: 0;
+  padding: 0; 
+}
+style doneColStyle  { 
+  list-style: none;
+  margin: 0;
+  padding: 0; 
+}
+style somedayColStyle  { 
+  list-style: none;
+  margin: 0;
+  padding: 0; 
+}
+
+style groupStyle itemStyle {
+  margin: 2px; 
+  padding-top: 10px;
+  margin-top: 15px;
+  position: relative;
+  overflow: visible;
+  -webkit-box-shadow: 0 2px 12px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0 2px 12px rgba(0,0,0,0.5);
+  box-shadow: 0 1px 2px #000;
+}
+
+style aboutStyle {
+  padding: 10px; 
+}
