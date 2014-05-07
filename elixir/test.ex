@@ -1,5 +1,8 @@
 defmodule Test do
 
+# c("test.ex")
+# Test.concat([1,2,3], [4,5,6])
+
   def concat(xs, ys) do
     xs ++ ys
   end
