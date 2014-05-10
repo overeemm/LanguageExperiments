@@ -2,8 +2,10 @@ defmodule Counter do
 
   def counter(count) do
     receive do
-      :inc -> Counter.counter(count + 1)
-      :dec -> Counter.counter(count - 1)
+      :inc ->
+        Counter.counter(count + 1)
+      :dec ->
+        Counter.counter(count - 1)
       {:get, pid} ->
         send(pid, count)
         Counter.counter(count)
