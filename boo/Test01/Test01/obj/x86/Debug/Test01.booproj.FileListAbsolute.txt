@@ -1,0 +1,9 @@
+p:\Boo\Test01\Test01\bin\Debug\Test01.pdb
+p:\Boo\Test01\Test01\bin\Debug\Boo.Lang.Useful.dll
+p:\Boo\Test01\Test01\bin\Debug\Boo.Lang.Parser.dll
+p:\Boo\Test01\Test01\bin\Debug\Boo.Lang.Compiler.dll
+p:\Boo\Test01\Test01\bin\Debug\Boo.Lang.dll
+p:\Boo\Test01\Test01\obj\x86\Debug\ResolveAssemblyReference.cache
+p:\Boo\Test01\Test01\obj\x86\Debug\Test01.pdb
+p:\Boo\Test01\Test01\bin\Debug\Test01.dll
+p:\Boo\Test01\Test01\obj\x86\Debug\Test01.dll
